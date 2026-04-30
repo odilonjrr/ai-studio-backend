@@ -1,0 +1,23 @@
+{
+  "name": "ai-studio-backend",
+  "version": "1.0.0",
+  "description": "Backend para AI Studio com integração MercadoPago",
+  "main": "backend_mercadopago.js",
+  "scripts": {
+    "start": "node backend_mercadopago.js",
+    "dev": "nodemon backend_mercadopago.js"
+  },
+  "keywords": ["mercadopago", "pagamentos", "pix"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "mercadopago": "^2.0.3",
+    "dotenv": "^16.0.3",
+    "axios": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
