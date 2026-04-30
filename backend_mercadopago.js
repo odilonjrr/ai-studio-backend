@@ -13,7 +13,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(cors({
-  origin: ['https://iafotostudio.netlify.app', 'http://localhost:3000'],
+  origin: ['https://iafotostudio.vercel.app', 'https://iafotostudio.netlify.app', 'http://localhost:3000'],
   methods: ['GET', 'POST'],
   credentials: true
 }));
