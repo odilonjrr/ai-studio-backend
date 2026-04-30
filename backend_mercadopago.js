@@ -12,7 +12,11 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: ['https://iafotostudio.netlify.app', 'http://localhost:3000'],
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
 
 // Configurar MercadoPago
 mercadopago.configure({
